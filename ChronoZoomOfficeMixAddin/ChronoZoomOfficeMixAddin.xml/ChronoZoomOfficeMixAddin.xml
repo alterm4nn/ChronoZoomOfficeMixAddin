@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Created:cbbc9d22-5cf7-4e4c-8ee9-42a772aae58a-->
+<OfficeApp xsi:type="ContentApp" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/office/appforoffice/1.1">
+  <Id>79077a19-d0b0-44ac-b512-f7c19d939e13</Id>
+  <Version>0.1.0.0</Version>
+  <ProviderName>Moscow State University</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="ChronoZoomOfficeMixAddin" />
+  <Description DefaultValue="ChronoZoomOfficeMixAddin" />
+  <SupportUrl DefaultValue="http://www.chronozoom.com" />
+  <Hosts>
+    <Host Name="Presentation"/>
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="~remoteAppUrl/App/Home/Home.html" />
+    <RequestedWidth>1000</RequestedWidth>
+    <RequestedHeight>560</RequestedHeight>
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <!--
+ 	Whether to take an application snapshot as a preview. Need to be careful if this could expose information that should be no shown (i.e. the answer) 
+	>
+   <AllowSnapshot>true</AllowSnapshot-->
+</OfficeApp>
+
