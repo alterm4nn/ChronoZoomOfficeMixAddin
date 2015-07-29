@@ -202,7 +202,7 @@
             this.switchToMode(mode);
         }
         AppViewModel.prototype.switchUserMode = function () {
-            if (this.mode() === "link" && !/^.*https?::\/\/cz-alexn-test\.azurewebsites\.net.*".*/.test(this.customCode())) {
+            if (this.mode() === "link" && !/^.*https?::\/\/www\.chronozoom\.com.*".*/.test(this.customCode())) {
                 this.inputColor("#FF5555");
             } else 
                 this.userEditMode(this.userEditMode() === UserEditMode.Preview ? UserEditMode.Edit : UserEditMode.Preview);
