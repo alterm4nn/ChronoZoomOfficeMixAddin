@@ -83,10 +83,12 @@
             url: request.url
         }).done(function (response) {
             for (var j = 0; j < response.length; j++)
-                collectionsObservable.push({
-                    title: supercollection.Title + "/" + response[j].Title,
-                    path: supercollection.Title + "/" + response[j].Path
-                });
+                if (response[j].PubliclySearchable) {
+                    collectionsObservable.push({
+                        title: supercollection.Title + "/" + response[j].Title,
+                        path: supercollection.Title + "/" + response[j].Path
+                    });
+                }
             if (i + 1 < supercollections.length)
                 getCollections(i + 1, supercollections, collectionsObservable, _serviceUri);
         });
